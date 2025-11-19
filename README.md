@@ -18,11 +18,11 @@
                 <p>Son utilisation doit se faire dans une fonction asynchrone pour premmetre la récupération des données avec un await.</p>
                 <div class="exemple">
                     <p class="title">Exemple d'utilisation</p>
-                    <pre><code>async function getData() {
+                    <pre><code>async function showData() {
     const values = await csvMarees.fetchCSVMarees(4, "annuelles_Matane_2025.csv"); // Renvoie les prédictions d'aujourdhui et des 3 prochains jours
     // traitement des données depuis values
 }
-getData();</code></pre>
+showData();</code></pre>
                 </div>
             </div>
         </article>
