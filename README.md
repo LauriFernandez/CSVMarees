@@ -1,7 +1,7 @@
 # CSVMarees
 <section>
         <article>
-            <h3>Description de la libraire</h3>
+            <h3>Description de la librairie</h3>
             <p>Cette librairie permets de charger les données issus d'un document CSV fournis par le gourvenment canadien sur la prévision des marrées. Elle peut-être utiliseé sur wordpress, comme sur un site static. Elle est simple d'utilisation et utilise des librairies externe, tel que Papaparse et date-fns.</p>
             <p><a href="https://github.com/LauriFernandez/CSVMarees/blob/main/dist/lib-csv-marees.js">Lien de téléchargement de la libraire</a></p>
         </article>
