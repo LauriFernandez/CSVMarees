@@ -41,6 +41,13 @@ export function fetchCSVMarees(intervalDay, link) {
   return promise;
 }
 
+/**
+ * Fonction permettant le chargement des données du csv des prédiction des marées en fonction d'un interval de jours donnée, avant et après aujourd'hui et du lien vers le fichier
+ * @param {string} link 
+ * @param {interger} nbDayBefore 
+ * @param {interger} nbDayAfter 
+ * @returns {array}
+ */
 export function fetchIntervalMarees(link, nbDayBefore, nbDayAfter) {
   let promise = new Promise((resolve) => {
     parse(link, {
