@@ -41,7 +41,7 @@ export function fetchCSVMarees(intervalDay, link) {
   return promise;
 }
 
-export function fetchIntervalMarees(nbDayBefore, nbDayAfter, link) {
+export function fetchIntervalMarees(link, nbDayBefore, nbDayAfter) {
   let promise = new Promise((resolve) => {
     parse(link, {
       download: true,

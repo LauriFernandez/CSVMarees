@@ -12,7 +12,7 @@
                 <p>Cette fonction permets de retourner un array contenant les dates en ISO avec l'heure ainsi que la hauteur en mètre de la marée. Les prédictions commence toujours à partir du jours et de l'heure de la requète.</p>
                 <p>Elle prends deux paramètres: </p>
                 <ul>
-                    <li>intervalDay : entier pour indiquer le nombre de jours de prévision souhaité</li>
+                    <li>intervalDay : entier pour indiquer le nombre de jours de prévision souhaité (mettre 0 si on ne souhaite pas de limite)</li>
                     <li>link : string contenant le lien vers le fichier csv à charger</li>
                 </ul>
                 <p>Son utilisation doit se faire dans une fonction asynchrone pour premmetre la récupération des données avec un await.</p>
@@ -20,6 +20,25 @@
                     <p class="title">Exemple d'utilisation</p>
                     <pre><code>async function showData() {
     const values = await csvMarees.fetchCSVMarees(4, "annuelles_Matane_2025.csv"); // Renvoie les prédictions d'aujourdhui et des 3 prochains jours
+    // traitement des données depuis values
+}
+showData();</code></pre>
+                </div>
+            </div>
+            <div class="fonction">
+                <h4>fetchIntervalMarees(link, nbDayBefore, nbDayAfter)</h4>
+                <p>Cette fonction permets de retourner un array contenant les dates en ISO avec l'heure ainsi que la hauteur en mètre de la marée. On peut lui donner un interval de journée avant et après pour avoir les données sur plusieurs jours.</p>
+                <p>Elle prends deux paramètres: </p>
+                <ul>
+                    <li>link : string contenant le lien vers le fichier csv à charger</li>
+                    <li>nbDayBefore : entier représentant le nombre de jours précédent à aujourd'hui que nous souhaitons avoir (mettre 0 si on ne souhaite pas de limite)</li>
+                    <li>nbDayAfter : entier représentant le nombre de jours suivant à aujourd'hui que nous souhaitons avoir (mettre 0 si on ne souhaite pas de limite)</li>
+                </ul>
+                <p>Son utilisation doit se faire dans une fonction asynchrone pour premmetre la récupération des données avec un await.</p>
+                <div class="exemple">
+                    <p class="title">Exemple d'utilisation</p>
+                    <pre><code>async function showData() {
+    const values = await csvMarees.fetchIntervalMarees(7,4, "annuelles_Matane_2025.csv"); // Renvoie les prédictions d'il y a une semaine au 4 prochains jours
     // traitement des données depuis values
 }
 showData();</code></pre>
