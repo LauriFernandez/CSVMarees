@@ -38,7 +38,7 @@ showData();</code></pre>
                 <div class="exemple">
                     <p class="title">Exemple d'utilisation</p>
                     <pre><code>async function showData() {
-    const values = await csvMarees.fetchIntervalMarees(7,4, "annuelles_Matane_2025.csv"); // Renvoie les prédictions d'il y a une semaine au 4 prochains jours
+    const values = await csvMarees.fetchIntervalMarees("annuelles_Matane_2025.csv",7,4); // Renvoie les prédictions d'il y a une semaine au 4 prochains jours
     // traitement des données depuis values
 }
 showData();</code></pre>
