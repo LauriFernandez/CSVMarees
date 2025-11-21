@@ -3,12 +3,12 @@ import { TZDate } from "@date-fns/tz";
 import { parse } from "papaparse";
 
 /**
- * Fonction permettant le chargement des données du csv des prédiction des marées en fonction du nombre de jour d'indiqué et du lien vers le fichier
+ * Fonction permettant le chargement des données du csv des prédiction des marées en fonction du nombre de jour d'indiqué et du lien vers le fichier 
+ * * @param {string} link 
  * @param {interger} intervalDay 
- * @param {string} link 
  * @returns {array}
  */
-export function fetchCSVMarees(intervalDay, link) {
+export function fetchCSVMarees(link, intervalDay) {
   let promise = new Promise((resolve) => {
     parse(link, {
       download: true,

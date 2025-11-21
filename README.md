@@ -8,12 +8,12 @@
         <article>
             <h3>Fonctions disponible</h3>
             <div class="fonction">
-                <h4>fetchCSVMarees(intervalDay, link)</h4>
+                <h4>fetchCSVMarees(link, intervalDay)</h4>
                 <p>Cette fonction permets de retourner un array contenant les dates en ISO avec l'heure ainsi que la hauteur en mètre de la marée. Les prédictions commence toujours à partir du jours et de l'heure de la requète.</p>
                 <p>Elle prends deux paramètres: </p>
                 <ul>
-                    <li>intervalDay : entier pour indiquer le nombre de jours de prévision souhaité (mettre 0 si on ne souhaite pas de limite)</li>
                     <li>link : string contenant le lien vers le fichier csv à charger</li>
+                    <li>intervalDay : entier pour indiquer le nombre de jours de prévision souhaité (mettre 0 si on ne souhaite pas de limite)</li>
                 </ul>
                 <p>Son utilisation doit se faire dans une fonction asynchrone pour premmetre la récupération des données avec un await.</p>
                 <div class="exemple">
