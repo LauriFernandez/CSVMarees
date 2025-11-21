@@ -6,7 +6,7 @@
             <p><a href="https://github.com/LauriFernandez/CSVMarees/blob/main/dist/lib-csv-marees.js">Lien de téléchargement de la libraire</a></p>
         </article>
         <article>
-            <h3>Fonctions disponible</h3>
+            <h3>Fonctions disponible (V2)</h3>
             <div class="fonction">
                 <h4>fetchCSVMarees(link, intervalDay)</h4>
                 <p>Cette fonction permets de retourner un array contenant les dates en ISO avec l'heure ainsi que la hauteur en mètre de la marée. Les prédictions commence toujours à partir du jours et de l'heure de la requète.</p>
