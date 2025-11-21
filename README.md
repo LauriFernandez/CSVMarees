@@ -28,7 +28,7 @@ showData();</code></pre>
             <div class="fonction">
                 <h4>fetchIntervalMarees(link, nbDayBefore, nbDayAfter)</h4>
                 <p>Cette fonction permets de retourner un array contenant les dates en ISO avec l'heure ainsi que la hauteur en mètre de la marée. On peut lui donner un interval de journée avant et après pour avoir les données sur plusieurs jours.</p>
-                <p>Elle prends deux paramètres: </p>
+                <p>Elle prends trois paramètres: </p>
                 <ul>
                     <li>link : string contenant le lien vers le fichier csv à charger</li>
                     <li>nbDayBefore : entier représentant le nombre de jours précédent à aujourd'hui que nous souhaitons avoir (mettre 0 si on ne souhaite pas de limite)</li>
