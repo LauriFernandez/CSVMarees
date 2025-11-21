@@ -19,7 +19,7 @@
                 <div class="exemple">
                     <p class="title">Exemple d'utilisation</p>
                     <pre><code>async function showData() {
-    const values = await csvMarees.fetchCSVMarees(4, "annuelles_Matane_2025.csv"); // Renvoie les prédictions d'aujourdhui et des 3 prochains jours
+    const values = await csvMarees.fetchCSVMarees("annuelles_Matane_2025.csv",4); // Renvoie les prédictions d'aujourdhui et des 3 prochains jours
     // traitement des données depuis values
 }
 showData();</code></pre>
